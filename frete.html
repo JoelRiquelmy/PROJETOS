@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+</head>
+<body>
+    <div class="container">
+        <form id ="form-frete">
+            <div class="row mt-5">
+                <h4>Dados do Produto</h4>
+            </div>
+            <div class="row mb-5">
+                <div class="col-3">
+                    <label for="nome" class="form-label">Nome:</label>
+                    <input type="text" class="form-control" id="nome" placeholder="Digite o nome">
+                </div>
+                <div class="col-5">
+                    <label for="sobrenome" class="form-label">Sobrenome:</label>
+                    <input type="text" class="form-control" id="sobrenome" placeholder="Digite o sobrenome">
+                </div>
+                <div class="col-4">
+                    <label for="email" class="form-label">Email:</label>
+                    <input type="email" class="form-control" id="email" placeholder="Digite o email">
+                </div>
+                <div class="row">
+                    <h4>Dados de Envio</h4>
+                </div>
+                <div class="row mb-5">
+                    <div class="col-3 d-flex align-items-end">
+                        <input type="text" class="form-control" id="cep" placeholder="Digite o CEP">
+                        <button type="button" class="btn btn-primary mt-2" id="buscar-cep">
+                            <i class="bi bi-search"></i>
+                            <span class="d-none spinner-border spinner-border-sm "></span>
+                        </button>
+                    </div>
+                    <div class="col-7">
+                        <input type="text" class="form-control" id="endereco" placeholder="Digite o endereço">
+                    </div>
+                    <div class="col-2">
+                        <input type="text" class="form-control" id="numero" placeholder="Nº">
+                    </div>
+                </div>
+            <button type="submit" class="btn btn-success col-2">Calcular Frete</button>
+        </form>
+    </div>
+
+    <script src="jquery.js"></script>
+    <script src="jquery.mask.min.js"></script>
+    <script src="main.js"></script>
+    
+</body>
+</html>
